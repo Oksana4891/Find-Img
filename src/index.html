@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Material icons. -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <title>Module 13 - image-finder</title>
+  </head>
+  <body>
+    <h1>Image-finder</h1>
+    <div class="wrapper">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" id="submit-form">Find</button>
+      </form>
+      <section class="image-finder">
+        <ul class="image-finder_list" id="image-finder_list"></ul>
+        <div class="spinner-border d-none text-center" role="status" id="spinner">
+          <span class="sr-only">Loading...</span>
+        </div>
+        <button type="button" class="image-finder_button" id="lead-more">
+          Lead more
+        </button>
+      </section>
+    </div>
+  </body>
+</html>
